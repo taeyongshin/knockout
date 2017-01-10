@@ -1,16 +1,15 @@
-.frontpage {
-    font-size: 100px;
-    text-indent: 100px;
-    padding-top: 150px;
-    margin: 0px;
-    text-align: middle;
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
 /* The navigation bar */
 ul {
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 0;
+    height: 30px;
     overflow: hidden;
     background-color: #fff;
     position: fixed; /* Set the navbar to fixed position */
@@ -28,14 +27,24 @@ li a {
     text-decoration: none;
 }
 
-li .left {
-    position:absolute;
-    left: 5px;
+.button {
+  display:inline-block;
+  font-size:6px;
+  padding:3px 8px;
+  text-decoration:none;
+  text-align: left;
+  color: #fff;
+  width: 90px;
+  margin:1px;
 }
 
-li .right {
-    float:right;
-    right: 5px;
+.parallelogram{
+  transform: skew(-10deg);
+}
+
+.skew-fix{
+  display:inline-block;
+  transform: skew(10deg);
 }
 
 /* Main content */
@@ -45,5 +54,17 @@ li .right {
 
 .row {
     width: 100%;
-    background: linear-gradient(to right, lightblue , pink); /* Standard syntax */
+    background: linear-gradient(to right, blue , pink); /* Standard syntax */
+}
+
+.frontpage {
+    font-size: 100px;
+    text-indent: 100px;
+    padding-top: 150px;
+    margin: 0px;
+}
+
+.col {
+    width: 50%;
+    padding-top: 50px;
 }
